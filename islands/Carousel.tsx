@@ -39,17 +39,16 @@ type SlideProps = {
 
 const Slide = (props: SlideProps) => {
   const { key, data } = props;
-  const { href, text, url } = data;
+  const { href, color, text, url } = data;
   if (props.class === undefined) props.class = "";
   return (
     <div
       key={key}
-      class={`${props.class} h-96 w-full text-center text-black`}
+      class={`${props.class} ${color} h-96 w-full text-center text-black p-8`}
     >
-      <img src={url} alt={text} class='absolute z-0 w-full -translate-y-1/3'/>
       <a href={href} target='_blank' class='flex justify-center'>
-        <p class='absolute z-10 text-4xl text-gray mt-1 drop-shadow-sm'>{text}</p>
-        <img src={url} alt={text} class='absolute z-5 h-full'/>
+        <p class={`absolute z-10 text-2xl text-gray mt-1 shadow-md p-2`}>{text}</p>
+        <img src={url} alt={text} class='absolute z-5 h-5/6 shadow-md'/>
       </a>
     </div>
   );

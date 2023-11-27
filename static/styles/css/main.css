@@ -13,16 +13,17 @@ body {
 
 main {
   min-height: 100vh;
-}
-
-.hero {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  width: 960px;
+  margin: 0 auto;
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 64px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 48px;
 }
 
 .brand-logo {
@@ -31,4 +32,25 @@ h1 {
   height: 48px;
   background-image: url("/image/logo/brand_logo.png");
   background-size: contain;
+  background-repeat: no-repeat;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table tr {
+  height: 64px;
+  border-bottom: 1px solid #333;
+}
+table tr:last-child {
+  border: 0;
+}
+table th {
+  text-align: left;
+  font-size: 24px;
+}
+
+.content {
+  padding: 80px 0;
 }
