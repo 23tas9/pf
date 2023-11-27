@@ -40,28 +40,28 @@ export default function About() {
             image: "/image/logo/cpp.png",
             since: 2020,
             mastery: 5,
-            about: "foo"
+            about: "独学で学び、アプリ開発など"
         },
         {
             display: "Java Script",
             image: "/image/logo/js.png",
             since: 2019,
             mastery: 4,
-            about: "foo"
+            about: "独学で学び、Webサイト制作など"
         },
         {
             display: "OpenSiv3D",
             image: "/image/logo/siv3d.png",
             since: 2021,
             mastery: 4,
-            about: "foo"
+            about: "ゲーム制作やコミッタとしての活動"
         },
         {
             display: "Unity",
             image: "/image/logo/unity.png",
             since: 2022,
             mastery: 3,
-            about: "foo"
+            about: "授業内でのゲーム制作"
         }
     ]
 
