@@ -1,5 +1,7 @@
 import StarRating from "./StarRating.tsx";
 
+import ExternalLink from "./ExternalLink.tsx";
+
 export default function About() {
     const GetMyAge = () =>{
         const today = new Date();
@@ -66,8 +68,8 @@ export default function About() {
     ]
 
     return (
-        <div className="about content">
-            <h2 id="about">About</h2>
+        <div className="about content" id="about">
+            <h2>About</h2>
             <table>
                 <thead>
                     <tr>
@@ -80,7 +82,7 @@ export default function About() {
                             <td>{item.display}</td>
                             <td>{
                                 item.link
-                                ? <a href={item.link}>{item.value}</a>
+                                ? <ExternalLink href={item.link} text={item.value} />
                                 : item.value
                             }</td>
                         </tr>
