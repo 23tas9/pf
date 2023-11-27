@@ -25,7 +25,7 @@ export default function About() {
         },
         {
             display: "所属",
-            value: "大阪電気通信大学 総合情報学部 デジタルゲーム学科"
+            value: "大阪電気通信大学 総合情報学部 デジタルゲーム学科(OECUプログラミングサークル)"
         },
         {
             display: "GitHub",

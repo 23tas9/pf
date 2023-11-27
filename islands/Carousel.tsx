@@ -15,14 +15,14 @@ const SLIDE_DATA = [
   {
     color: "bg-yellow-300",
     text: "Siv3D x Bullet",
-    href: 'https://tas9n.github.io/EggTower/game',
+    href: 'https://github.com/tas9n/OpenSiv3DBulletPhysics/tree/main',
     url: "/image/works/siv3dxbulletphysics.png",
   },
   {
-    color: "bg-gray-300",
-    text: "slide three",
-    href: 'https://tas9n.github.io/EggTower/game',
-    url: "/illustration/deno-plush.svg",
+    color: "bg-purple-300",
+    text: "バンダイナムコスタジオ杯 | Siv3D ゲームジャム 2023",
+    href: 'https://github.com/tas9n/bnscup2023/tree/1.0',
+    url: "https://raw.githubusercontent.com/tas9n/bnscup2023/master/gameplay.png",
   }
 ];
 
@@ -47,7 +47,7 @@ const Slide = (props: SlideProps) => {
       class={`${props.class} ${color} h-96 w-full text-center text-black p-8`}
     >
       <a href={href} target='_blank' class='flex justify-center'>
-        <p class={`absolute z-10 text-2xl text-gray mt-1 shadow-md p-2`}>{text}</p>
+        <p class={`absolute z-10 text-2xl text-gray mt-1 shadow-md p-2 bg-gray-100 bg-opacity-50`}>{text}</p>
         <img src={url} alt={text} class='absolute z-5 h-5/6 shadow-md'/>
       </a>
     </div>
