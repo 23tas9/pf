@@ -30,12 +30,19 @@ main {
 }
 
 h1 {
+    margin: 40px;
     font-size: 64px;
     text-align: center;
 }
 
 h2 {
+    margin: 8px 0;
     font-size: 48px;
+}
+
+h3 {
+    font-size: 24px;
+    border-left: 8px solid var.$color-font-text;
 }
 
 .brand-logo {
@@ -68,5 +75,23 @@ table {
 }
 
 .content {
-    padding: 80px 0;
+    margin: 20px 0;
+    padding: 40px 24px;
+
+    background-color: rgba(lightgray, 0.6);
+    &:nth-child(even) {
+        background-color: rgba(white, 0.6);
+    }
+}
+
+.external-link {
+    color: var.$color-main;
+}
+
+article {
+    padding: 16px;
+
+    & section {
+        padding: 8px;
+    }
 }

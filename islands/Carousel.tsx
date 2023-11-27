@@ -44,7 +44,7 @@ const Slide = (props: SlideProps) => {
   return (
     <div
       key={key}
-      class={`${props.class} ${color} h-96 w-full text-center text-black p-8`}
+      class={`${props.class} ${color} h-96 w-full text-center text-black p-8 bg-opacity-80`}
     >
       <a href={href} target='_blank' class='flex justify-center'>
         <p class={`absolute z-10 text-2xl text-gray mt-1 shadow-md p-2 bg-gray-100 bg-opacity-50`}>{text}</p>

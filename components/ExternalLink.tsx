@@ -7,7 +7,7 @@ interface Prop{
 
 export default function ExternalLink({href, text}: Prop){
     return (
-        <a href={href}>
+        <a href={href} class="external-link" target="_blank">
             <IconLink class="w-6 h-6 inline-block" />{text}
         </a>
     )
