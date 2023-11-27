@@ -5,6 +5,10 @@
   font-family: "Zen Maru Gothic", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background-image: url("/image/background/bg_pattern.png");

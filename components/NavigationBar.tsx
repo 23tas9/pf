@@ -20,7 +20,7 @@ export default function NavigationBar(){
 
     return (
         <nav class='global-nav'>
-            <a href="/" class='brand-logo'></a>
+            <a href="/#" class='brand-logo'></a>
             <ul>
                 {menus.map(item=>(
                     <li>

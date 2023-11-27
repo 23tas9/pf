@@ -4,11 +4,16 @@ header {
     display: flex;
     justify-content: center;
 
+    position: sticky;
+    top: 0;
+
     width: 100%;
 
     padding: 4px;
 
     background-color: rgba(255, 255, 255, .7);
+
+    z-index: 100;
 }
 
 .global-nav {
