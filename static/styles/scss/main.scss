@@ -25,12 +25,12 @@ body {
 
 main {
     min-height: 100vh;
-    width: 960px;
+    width: var.$responsive-breakpoint_pc-min;
     margin: 0 auto;
 }
 
 h1 {
-    margin: 40px;
+    margin: 40px 0;
     font-size: 64px;
     text-align: center;
 }
@@ -42,6 +42,7 @@ h2 {
 
 h3 {
     font-size: 24px;
+    padding-left: 4px;
     border-left: 8px solid var.$color-font-text;
 }
 
@@ -55,9 +56,51 @@ h3 {
     background-repeat: no-repeat;
 }
 
-table {
+.carousel {
+    height: 384px;
+    width: 100%;
+    text-align: center;
+
+    padding: 32px;
+
+    &__child {
+        display: flex;
+        justify-content: center;
+        
+        &-text {
+            position: absolute;
+
+            margin-top: -8px;
+            padding: 8px;
+
+            font-size: 32px;
+            line-height: 32px;
+
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+            background-color: rgb(243, 244, 246, 0.5);
+            border-radius: 8px;
+
+            z-index: 10;
+        }
+
+        &-img {
+            position: absolute;
+
+            height: 320px;
+
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+            z-index: 5;
+        }
+    }
+}
+
+.about-table {
     width: 100%;
     border-collapse: collapse;
+
+    //table-layout: fixed;
 
     & tr {
         height: 64px;
@@ -68,9 +111,21 @@ table {
         }
     }
 
-    th {
+    & td, & th {
+        padding: 4px;
+    }
+
+    & th {
         text-align: left;
         font-size: 24px;
+    }
+
+    &__skill-icon {
+        width: 64px;
+
+        & img {
+            display: block;
+        }
     }
 }
 
@@ -93,5 +148,70 @@ article {
 
     & section {
         padding: 8px;
+    }
+}
+
+.star-rating__elem {
+    display: inline-block;
+
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: var.$responsive-breakpoint_pc-min){
+    * {
+        max-width: 100%;
+    }
+
+    main {
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .carousel {
+        height: 256px;
+        padding: 16px;
+
+        &__child {
+
+            &-text {
+                
+                font-size: 24px;
+            }
+
+            &-img {
+                height: 224px;
+            }
+        }
+    }
+
+    .content {
+        padding: 16px;
+    }
+
+    .about-table {
+        & th {
+            font-size: 12px;
+        }
+
+        &__skill-icon {
+            width: 32px;
+        }
+    }
+
+    .star-rating__elem {
+        width: 24px;
+        height: 24px;
     }
 }
