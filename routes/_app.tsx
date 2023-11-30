@@ -8,6 +8,7 @@ export default function App({ Component }: AppProps) {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="たすくん,tas9n,23_tas9,ポートフォリオ,きゅーらぼ,9lab,プログラミング,ゲーム制作" />
 
         <title>きゅーらぼ - 9lab</title>
         
