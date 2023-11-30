@@ -25,7 +25,7 @@ body {
 
 main {
     min-height: 100vh;
-    width: 960px;
+    width: var.$responsive-breakpoint_pc-min;
     margin: 0 auto;
 }
 
@@ -42,6 +42,7 @@ h2 {
 
 h3 {
     font-size: 24px;
+    padding-left: 4px;
     border-left: 8px solid var.$color-font-text;
 }
 
@@ -93,5 +94,32 @@ article {
 
     & section {
         padding: 8px;
+    }
+}
+
+.star-rating__elem {
+    display: inline-block;
+
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: var.$responsive-breakpoint_pc-min){
+    * {
+        max-width: 100%;
+    }
+
+    main {
+        
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    
+    .star-rating__elem {
+        width: 8px;
+        height: 8px;
     }
 }

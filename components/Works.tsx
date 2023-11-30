@@ -17,7 +17,9 @@ export default function Works(){
                         ゲーム制作の難しさとUnityなどゲームエンジンのありがたみを感じました。<br />
                         <br />
                         <ExternalLink href="https://github.com/tas9n/bnscup2023/tree/1.0" text="GitHubリポジトリ" />
-                        <img src="/image/works/bnscup2023.png" alt="バンダイナムコスタジオ杯 | Siv3D ゲームジャム 2023" />
+                        <a href="https://github.com/tas9n/bnscup2023/tree/1.0" target="_blank">
+                            <img src="/image/works/bnscup2023.png" alt="バンダイナムコスタジオ杯 | Siv3D ゲームジャム 2023" />
+                        </a>
                     </p>
                 </section>
             </article>
