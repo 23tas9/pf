@@ -49,3 +49,12 @@ header {
 .global-nav ul li a:hover::after {
   transform: scale(1, 1);
 }
+
+@media screen and (max-width: 960px) {
+  header {
+    position: relative;
+  }
+  .global-nav {
+    display: none;
+  }
+}

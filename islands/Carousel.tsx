@@ -44,11 +44,11 @@ const Slide = (props: SlideProps) => {
   return (
     <div
       key={key}
-      class={`${props.class} ${color} h-96 w-full text-center text-black p-8 bg-opacity-80`}
+      class={`${props.class} ${color} bg-opacity-80 carousel`}
     >
-      <a href={href} target='_blank' class='flex justify-center'>
-        <p class={`absolute z-10 text-2xl text-gray mt-1 shadow-md p-2 bg-gray-100 bg-opacity-50`}>{text}</p>
-        <img src={url} alt={text} class='absolute z-5 h-5/6 shadow-md'/>
+      <a href={href} target='_blank' class='carousel__child'>
+        <p class="carousel__child-text">{text}</p>
+        <img src={url} alt={text} class='carousel__child-img'/>
       </a>
     </div>
   );

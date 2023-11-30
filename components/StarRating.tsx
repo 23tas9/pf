@@ -6,12 +6,12 @@ export default function StarRating({ rating }){
     const stars = Array.from({ length: 5 }, (_, index) => index);
 
     return (
-        <div>
+        <div className="star-rating">
             {stars.map((_) => {
                 if(_ < rating) {
-                    return <IconStarFilled class="w-6 h-6 inline-block" />
+                    return <IconStarFilled class="star-rating__elem" />
                 }else{
-                    return <IconStar class="w-6 h-6 inline-block" />;
+                    return <IconStar class="star-rating__elem" />;
                 }
             })}
         </div>

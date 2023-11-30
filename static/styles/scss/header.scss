@@ -72,3 +72,13 @@ header {
         }
     }
 }
+
+@media screen and (max-width: var.$responsive-breakpoint_pc-min){
+    header {
+        position: relative;
+    }
+
+    .global-nav {
+        display: none;
+    }
+}
