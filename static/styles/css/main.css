@@ -60,7 +60,7 @@ h3 {
 }
 .carousel__child-text {
   position: absolute;
-  margin-top: 4px;
+  margin-top: -8px;
   padding: 8px;
   font-size: 32px;
   line-height: 32px;
@@ -122,8 +122,21 @@ article section {
   * {
     max-width: 100%;
   }
+  main {
+    padding: 8px;
+  }
   h1 {
-    font-size: 48px;
+    font-size: 32px;
+  }
+  .carousel {
+    height: 256px;
+    padding: 16px;
+  }
+  .carousel__child-text {
+    font-size: 24px;
+  }
+  .carousel__child-img {
+    height: 224px;
   }
   .star-rating__elem {
     width: 8px;

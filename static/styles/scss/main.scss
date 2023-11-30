@@ -70,7 +70,7 @@ h3 {
         &-text {
             position: absolute;
 
-            margin-top: 4px;
+            margin-top: -8px;
             padding: 8px;
 
             font-size: 32px;
@@ -150,14 +150,30 @@ article {
     }
 
     main {
-        
+        padding: 8px;
     }
 
     h1 {
-        font-size: 48px;
+        font-size: 32px;
     }
 
-    
+    .carousel {
+        height: 256px;
+        padding: 16px;
+
+        &__child {
+
+            &-text {
+                
+                font-size: 24px;
+            }
+
+            &-img {
+                height: 224px;
+            }
+        }
+    }
+
     .star-rating__elem {
         width: 8px;
         height: 8px;
