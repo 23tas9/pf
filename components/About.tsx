@@ -70,7 +70,7 @@ export default function About() {
     return (
         <div className="about content" id="about">
             <h2>About</h2>
-            <table>
+            <table className="about-table">
                 <thead>
                     <tr>
                         <th colspan="2">私について</th>
@@ -89,7 +89,7 @@ export default function About() {
                     ))}
                 </tbody>
             </table>
-            <table>
+            <table className="about-table">
                 <thead>
                     <tr>
                         <th></th>
@@ -102,9 +102,9 @@ export default function About() {
                 <tbody>
                     {Skills.map((item)=>(
                         <tr>
-                            <td><img src={item.image} alt={`${item.display}のアイコン`} width="48" /></td>
+                            <td className="about-table__skill-icon"><img src={item.image} alt={`${item.display}のアイコン`} /></td>
                             <td>{item.display}</td>
-                            <td>{new Date().getFullYear() - item.since}</td>
+                            <td>{new Date().getFullYear() - item.since}年</td>
                             <td><StarRating rating={item.mastery}/> </td>
                             <td>{item.about}</td>
                         </tr>

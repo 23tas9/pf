@@ -30,7 +30,7 @@ main {
 }
 
 h1 {
-    margin: 40px;
+    margin: 40px 0;
     font-size: 64px;
     text-align: center;
 }
@@ -96,9 +96,11 @@ h3 {
     }
 }
 
-table {
+.about-table {
     width: 100%;
     border-collapse: collapse;
+
+    //table-layout: fixed;
 
     & tr {
         height: 64px;
@@ -109,9 +111,21 @@ table {
         }
     }
 
-    th {
+    & td, & th {
+        padding: 4px;
+    }
+
+    & th {
         text-align: left;
         font-size: 24px;
+    }
+
+    &__skill-icon {
+        width: 64px;
+
+        & img {
+            display: block;
+        }
     }
 }
 
@@ -154,7 +168,15 @@ article {
     }
 
     h1 {
+        font-size: 40px;
+    }
+
+    h2 {
         font-size: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
     }
 
     .carousel {
@@ -174,8 +196,22 @@ article {
         }
     }
 
+    .content {
+        padding: 16px;
+    }
+
+    .about-table {
+        & th {
+            font-size: 12px;
+        }
+
+        &__skill-icon {
+            width: 32px;
+        }
+    }
+
     .star-rating__elem {
-        width: 8px;
-        height: 8px;
+        width: 24px;
+        height: 24px;
     }
 }
