@@ -15,6 +15,12 @@ export default function App({ Component }: AppProps) {
         <link rel="apple-touch-icon" type="image/png" href="apple-touch-icon-180x180.png" />
         <link rel="icon" type="image/png" href="icon-192x192.png" />
 
+        <meta name="description" content="このサイトは私、たすくんのポートフォリオサイトである9lab(きゅーらぼ)です。これまでに手がけた作品などをまとめています。" />
+        <meta property="og:description" content="このサイトは私、たすくんのポートフォリオサイトである9lab(きゅーらぼ)です。これまでに手がけた作品などをまとめています。" />
+        <meta property="og:url" content="https://pf.9lab.me/" />
+        <meta property="og:image" content="/images/logo/brand_logo.png" />
+        <meta name="twitter:card" content="summary" />
+
         <link rel="stylesheet" href="/styles/css/main.css" />
         <link rel="stylesheet" href="/styles/css/header.css" />
         <link rel="stylesheet" href="/styles/css/footer.css" />
