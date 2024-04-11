@@ -126,12 +126,6 @@ article section {
   padding: 8px;
 }
 
-.star-rating__elem {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-}
-
 @media screen and (max-width: 960px) {
   * {
     max-width: 100%;
@@ -147,6 +141,10 @@ article section {
   }
   h3 {
     font-size: 24px;
+  }
+  .brand-logo {
+    width: 32px;
+    height: 32px;
   }
   .carousel {
     height: 256px;
@@ -166,9 +164,5 @@ article section {
   }
   .about-table__skill-icon {
     width: 32px;
-  }
-  .star-rating__elem {
-    width: 24px;
-    height: 24px;
   }
 }

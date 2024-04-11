@@ -2,7 +2,8 @@
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 
     position: sticky;
     top: 0;
@@ -21,8 +22,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    width: 50%;
 
     & ul {
         display: flex;
@@ -50,7 +49,7 @@ header {
 
                 &::after {
                     content: '';
-                    
+
                     position: absolute;
                     bottom: 0;
                     left: 10%;
@@ -59,7 +58,7 @@ header {
                     height: 2px;
 
                     background: var.$color-main;
-                    
+
                     transition: transform .3s;
                     transform: scale(0, 1);
                     transform-origin: left top;
@@ -73,7 +72,7 @@ header {
     }
 }
 
-@media screen and (max-width: var.$responsive-breakpoint_pc-min){
+@media screen and (max-width: var.$responsive-breakpoint_pc-min) {
     header {
         position: relative;
     }
