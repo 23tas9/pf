@@ -64,45 +64,49 @@ export default function About() {
     return (
         <div className="about content" id="about">
             <h2>About</h2>
-            <table className="about-table">
-                <thead>
-                    <tr>
-                        <th colspan="2">私について</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {AboutMe.map((item)=>(
+            <div className="table-scroll-lapper">
+                <table className="about-table">
+                    <thead>
                         <tr>
-                            <td>{item.display}</td>
-                            <td>{
-                                item.link
-                                ? <ExternalLink href={item.link} text={item.value} />
-                                : item.value
-                            }</td>
+                            <th colspan="2">私について</th>
                         </tr>
-                    ))}
-                </tbody>
-            </table>
-            <table className="about-table">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>スキル</th>
-                        <th>経験年数</th>
-                        <th>活動など</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {Skills.map((item)=>(
+                    </thead>
+                    <tbody>
+                        {AboutMe.map((item)=>(
+                            <tr>
+                                <td>{item.display}</td>
+                                <td>{
+                                    item.link
+                                    ? <ExternalLink href={item.link} text={item.value} />
+                                    : item.value
+                                }</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+            <div className="table-scroll-lapper">
+                <table className="about-table">
+                    <thead>
                         <tr>
-                            <td className="about-table__skill-icon"><img src={item.image} alt={`${item.display}のアイコン`} /></td>
-                            <td>{item.display}</td>
-                            <td>{new Date().getFullYear() - item.since}年</td>
-                            <td>{item.about}</td>
+                            <th></th>
+                            <th>スキル</th>
+                            <th>経験年数</th>
+                            <th>活動など</th>
                         </tr>
-                    ))}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        {Skills.map((item)=>(
+                            <tr>
+                                <td className="about-table__skill-icon"><img src={item.image} alt={`${item.display}のアイコン`} /></td>
+                                <td>{item.display}</td>
+                                <td>{new Date().getFullYear() - item.since}年</td>
+                                <td>{item.about}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
         </div>
     )
 }
