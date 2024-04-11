@@ -23,8 +23,8 @@ export default function ExternalLink({ href, text }: Prop) {
     })) IconComponent = IconMap[currentKey];
 
     return (
-        <a href={href} class="external-link" target="_blank">
-            <IconComponent class="external-link__icon" />
+        <a href={href} className="external-link" target="_blank">
+            <IconComponent className="external-link__icon" />
             {text}
         </a>
     )
