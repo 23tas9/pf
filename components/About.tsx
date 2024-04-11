@@ -1,5 +1,3 @@
-import StarRating from "./StarRating.tsx";
-
 import ExternalLink from "./ExternalLink.tsx";
 
 export default function About() {
@@ -19,7 +17,7 @@ export default function About() {
     const AboutMe = [
         {
             display: "名前",
-            value: "西口 侑(ニシグチ タスク)"
+            value: "たすくん"
         },
         {
             display: "年齢",
@@ -41,28 +39,24 @@ export default function About() {
             display: "C++",
             image: "/image/logo/cpp.png",
             since: 2020,
-            mastery: 5,
-            about: "独学で学び、アプリ開発など"
+            about: "OpenSiv3Dを用いた2Dゲーム開発、アプリ開発など"
         },
         {
             display: "Java Script",
             image: "/image/logo/js.png",
             since: 2019,
-            mastery: 4,
-            about: "独学で学び、Webサイト制作など"
+            about: "当サイト制作など"
         },
         {
             display: "OpenSiv3D",
             image: "/image/logo/siv3d.png",
             since: 2021,
-            mastery: 4,
             about: "ゲーム制作やコミッタとしての活動"
         },
         {
             display: "Unity",
             image: "/image/logo/unity.png",
             since: 2022,
-            mastery: 3,
             about: "授業内でのゲーム制作"
         }
     ]
@@ -95,7 +89,6 @@ export default function About() {
                         <th></th>
                         <th>スキル</th>
                         <th>経験年数</th>
-                        <th>熟練度</th>
                         <th>活動など</th>
                     </tr>
                 </thead>
@@ -105,7 +98,6 @@ export default function About() {
                             <td className="about-table__skill-icon"><img src={item.image} alt={`${item.display}のアイコン`} /></td>
                             <td>{item.display}</td>
                             <td>{new Date().getFullYear() - item.since}年</td>
-                            <td><StarRating rating={item.mastery}/> </td>
                             <td>{item.about}</td>
                         </tr>
                     ))}
