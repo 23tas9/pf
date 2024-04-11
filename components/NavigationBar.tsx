@@ -2,19 +2,15 @@ export default function NavigationBar(){
     const menus = [
         {
             'name': 'About',
-            'href': '#about'
+            'href': '/#about'
         },
         {
             'name': 'Works',
-            'href': '#works'
+            'href': '/#works'
         },
         {
             'name': 'Blog',
             'href': '/'
-        },
-        {
-            'name': 'Contact',
-            'href': '#contact'
         }
     ];
 
