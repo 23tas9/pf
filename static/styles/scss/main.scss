@@ -165,15 +165,19 @@ article {
     }
 
     h1 {
-        font-size: 40px;
-    }
-
-    h2 {
         font-size: 32px;
     }
 
-    h3 {
+    h2 {
         font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
     }
 
     .brand-logo {
@@ -204,7 +208,7 @@ article {
 
     .about-table {
         & th {
-            font-size: 12px;
+            font-size: 20px;
         }
 
         &__skill-icon {
