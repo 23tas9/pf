@@ -145,6 +145,14 @@ h3 {
 
 .external-link {
     color: var.$color-main;
+
+    margin: 4px;
+
+    &__icon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+    }
 }
 
 article {
