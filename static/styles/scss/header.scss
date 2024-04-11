@@ -50,7 +50,7 @@ header {
 
                 &::after {
                     content: '';
-                    
+
                     position: absolute;
                     bottom: 0;
                     left: 10%;
@@ -59,7 +59,7 @@ header {
                     height: 2px;
 
                     background: var.$color-main;
-                    
+
                     transition: transform .3s;
                     transform: scale(0, 1);
                     transform-origin: left top;
@@ -73,7 +73,7 @@ header {
     }
 }
 
-@media screen and (max-width: var.$responsive-breakpoint_pc-min){
+@media screen and (max-width: var.$responsive-breakpoint_pc-min) {
     header {
         position: relative;
     }
