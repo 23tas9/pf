@@ -1,6 +1,7 @@
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   position: sticky;
   top: 0;
   width: 100%;
@@ -14,7 +15,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
 }
 .global-nav ul {
   display: flex;
