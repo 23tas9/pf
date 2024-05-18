@@ -92,18 +92,21 @@ h3 {
 .about-table tr:last-child {
   border: 0;
 }
-.about-table td, .about-table th {
-  padding: 4px;
-}
 .about-table th {
   text-align: left;
   font-size: 24px;
+}
+.about-table td, .about-table th {
+  padding: 4px;
 }
 .about-table__skill-icon {
   width: 64px;
 }
 .about-table__skill-icon img {
   display: block;
+}
+.about-table__skill-experience {
+  text-align: center;
 }
 
 .content {
