@@ -100,7 +100,7 @@ export default function About() {
 							<tr>
 								<td className="about-table__skill-icon"><img src={item.image} alt={`${item.display}のアイコン`} /></td>
 								<td>{item.display}</td>
-								<td>{new Date().getFullYear() - item.since}年</td>
+								<td className="about-table__skill-experience">{new Date().getFullYear() - item.since}年</td>
 								<td>{item.about}</td>
 							</tr>
 						))}

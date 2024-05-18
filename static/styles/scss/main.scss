@@ -113,16 +113,16 @@ h3 {
         }
     }
 
-    & td,
-    & th {
-        padding: 4px;
-    }
-
     & th {
         text-align: left;
         font-size: 24px;
     }
 
+    & td,
+    & th {
+        padding: 4px;
+    }
+	
     &__skill-icon {
         width: 64px;
 
@@ -130,6 +130,10 @@ h3 {
             display: block;
         }
     }
+
+	&__skill-experience {
+		text-align: center;
+	}
 }
 
 .content {
