@@ -3,12 +3,14 @@ import IconLink from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/link.tsx";
 import IconBrandGithub from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brand-github.tsx";
 import IconBrandX from "https://deno.land/x/tabler_icons_tsx@0.0.5/tsx/brand-x.tsx"
 
+import { JSX } from "preact/jsx-runtime";
+
 interface Prop {
   href: string;
   text: string;
 };
 
-const IconMap = {
+const IconMap: { [x: string]: (props: { size?: number; color?: string; stroke?: number }) => JSX.Element } = {
     "https://github.com/": IconBrandGithub,
     "https://x.com": IconBrandX
 };
