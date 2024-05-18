@@ -1,15 +1,15 @@
 import ExternalLink from "./ExternalLink.tsx";
 
 export default function About() {
-	const GetMyAge = () =>{
+	const GetMyAge = () => {
 		const today = new Date();
 
 		const thisYearMyBirthday = new Date(today.getFullYear(),
 			12 - 1,
 			29
 		);
-		
-		const age = today.getFullYear() - 2003 - (today < thisYearMyBirthday ? 1:0);
+
+		const age = today.getFullYear() - 2003 - (today < thisYearMyBirthday ? 1 : 0);
 
 		return age;
 	};
@@ -72,13 +72,13 @@ export default function About() {
 						</tr>
 					</thead>
 					<tbody>
-						{AboutMe.map((item)=>(
+						{AboutMe.map((item) => (
 							<tr>
 								<td>{item.display}</td>
 								<td>{
 									item.link
-									? <ExternalLink href={item.link} text={item.value} />
-									: item.value
+										? <ExternalLink href={item.link} text={item.value} />
+										: item.value
 								}</td>
 							</tr>
 						))}
@@ -96,7 +96,7 @@ export default function About() {
 						</tr>
 					</thead>
 					<tbody>
-						{Skills.map((item)=>(
+						{Skills.map((item) => (
 							<tr>
 								<td className="about-table__skill-icon"><img src={item.image} alt={`${item.display}のアイコン`} /></td>
 								<td>{item.display}</td>
