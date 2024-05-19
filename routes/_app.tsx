@@ -1,9 +1,6 @@
 import { AppProps } from "$fresh/server.ts";
 import { Head } from "$fresh/src/runtime/head.ts";
 
-import Header from "../components/Header.tsx"
-import Footer from "../components/Footer.tsx";
-
 export default function App({ Component }: AppProps) {
 	return (
 		<html>
@@ -32,11 +29,7 @@ export default function App({ Component }: AppProps) {
 				<link rel="stylesheet" href="/styles/css/footer.css" />
 			</Head>
 			<body>
-				<div class="wrapper">
-					<Header />
-					<Component />
-					<Footer />
-				</div>
+				<Component />
 			</body>
 		</html>
 	);
