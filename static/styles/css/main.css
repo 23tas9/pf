@@ -22,15 +22,19 @@ main {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: underline;
+}
+
 h1 {
   margin: 40px 0;
-  font-size: 64px;
+  font-size: 48px;
   text-align: center;
 }
 
 h2 {
   margin: 8px 0;
-  font-size: 48px;
+  font-size: 32px;
 }
 
 h3 {
@@ -76,6 +80,19 @@ h3 {
   z-index: 5;
 }
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 512px;
+  margin: 0 auto;
+}
+.hero__title {
+  text-align: center;
+  font-size: 48px;
+}
+
 .table-scroll-lapper {
   width: 100%;
   overflow: scroll;
@@ -112,10 +129,54 @@ h3 {
 .content {
   margin: 20px 0;
   padding: 40px 24px;
-  background-color: rgba(211, 211, 211, 0.6);
-}
-.content:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.6);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em 1.5em;
+}
+
+.article-cards {
+  margin: 0 auto;
+  padding: 16px;
+  width: 960px;
+}
+.article-cards__item {
+  height: 420px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0.5rem 0.5rem 1rem 0px rgba(0, 0, 0, 0.4);
+  transition: transform 0.25s;
+}
+.article-cards__item:hover {
+  transform: scale(1.05);
+}
+.article-cards__item a {
+  text-decoration: none;
+}
+.article-cards__item__title {
+  padding: 0.5em;
+  border-left: 8px solid #1DAE35;
+}
+.article-cards__item__description {
+  padding: 1rem;
+  height: 220px;
+}
+.article-cards__item__description p {
+  margin: 0;
+}
+.article-cards__item__attachment {
+  margin: 0;
+  height: 100%;
+  text-align: center;
+}
+.article-cards__item__attachment__image {
+  vertical-align: middle;
+  max-width: 100%;
+  height: 200px;
 }
 
 .external-link {
@@ -143,7 +204,7 @@ article section {
     padding: 8px;
   }
   h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
   h2 {
     font-size: 24px;
@@ -167,6 +228,13 @@ article section {
   }
   .carousel__child-img {
     height: 224px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5em 1em;
+  }
+  .article-cards {
+    grid-template-columns: repeat(1, 1fr);
   }
   .content {
     padding: 16px;
