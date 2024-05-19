@@ -21,6 +21,10 @@ export default function Index() {
 		{
 			title: "Works",
 			href: "/#works"
+		},
+		{
+			title: "Blog",
+			href: "/blog"
 		}
 	];
 

@@ -86,6 +86,7 @@ export default function Works() {
 					</section>
 				</section>
 			))}
+			<a href="/blog">ブログはこちら</a>
 		</article>
 	);
 }
