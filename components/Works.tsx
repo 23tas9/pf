@@ -49,7 +49,7 @@ const WorkDatas: WorkDataType[] = [
 		]
 	},
 	{
-		title: "所属サークル(OECUPC)のWebサイト制作",
+		title: "所属サークル(OECUPC)のWebサイト制作(開発中)",
 		content: (
 			<p>
 				わたしの所属しているサークルのWebサイトをリニューアルしました。<br />
