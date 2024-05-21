@@ -7,7 +7,7 @@ interface Data {
 export default function Header({ menus }: Data) {
 	return (
 		<header>
-			<a href="/#" class='brand-logo'></a>
+			<a href="/#" class='brand-logo' aria-label="トップページに戻る"></a>
 
 			<nav class="global-nav">
 				<ul>
