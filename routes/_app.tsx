@@ -24,6 +24,10 @@ export default function App({ Component }: AppProps) {
 				<meta property="og:image" content="https://raw.githubusercontent.com/tas9n/pf/master/static/image/logo/brand_logo.png" />
 				<meta name="twitter:card" content="summary" />
 
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+				<link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Zen+Maru+Gothic:wght@500&display=swap" rel="stylesheet" />
+
 				<link rel="stylesheet" href="/styles/css/main.css" />
 				<link rel="stylesheet" href="/styles/css/header.css" />
 				<link rel="stylesheet" href="/styles/css/footer.css" />
