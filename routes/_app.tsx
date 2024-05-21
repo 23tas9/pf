@@ -21,7 +21,7 @@ export default function App({ Component }: AppProps) {
 				<meta name="description" content="このサイトは私、たすくんのポートフォリオサイトである9lab(きゅーらぼ)です。これまでに手がけた作品などをまとめています。" />
 				<meta property="og:description" content="このサイトは私、たすくんのポートフォリオサイトである9lab(きゅーらぼ)です。これまでに手がけた作品などをまとめています。" />
 				<meta property="og:url" content="https://pf.9lab.me/" />
-				<meta property="og:image" content="https://raw.githubusercontent.com/tas9n/pf/master/static/image/logo/brand_logo.png" />
+				<meta property="og:image" content="https://raw.githubusercontent.com/tas9n/pf/master/static/image/logo/brand_logo.webp" />
 				<meta name="twitter:card" content="summary" />
 
 				<link rel="preconnect" href="https://fonts.googleapis.com" />

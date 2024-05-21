@@ -44,7 +44,7 @@ const WorkDatas: WorkDataType[] = [
 				type: AttachmentType.image,
 				title: "バンダイナムコスタジオ杯 | Siv3D ゲームジャム 2023",
 				href: "https://github.com/tas9n/bnscup2023/tree/1.0",
-				src: "/image/works/bnscup2023.png"
+				src: "/image/works/bnscup2023.webp"
 			}
 		]
 	},
@@ -62,7 +62,7 @@ const WorkDatas: WorkDataType[] = [
 				type: AttachmentType.image,
 				title: "OECUPC Webサイト",
 				href: "https://opcofficial.deno.dev/",
-				src: "/image/works/oecupc-logo.png"
+				src: "/image/works/oecupc-logo.webp"
 			}
 		]
 	}

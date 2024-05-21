@@ -37,25 +37,25 @@ export default function About() {
 	const Skills = [
 		{
 			display: "C++",
-			image: "/image/logo/cpp.png",
+			image: "/image/logo/cpp.webp",
 			since: 2020,
 			about: "OpenSiv3Dを用いた2Dゲーム開発、アプリ開発など"
 		},
 		{
 			display: "Java Script",
-			image: "/image/logo/js.png",
+			image: "/image/logo/js.webp",
 			since: 2019,
 			about: "当サイト制作など"
 		},
 		{
 			display: "OpenSiv3D",
-			image: "/image/logo/siv3d.png",
+			image: "/image/logo/siv3d.webp",
 			since: 2021,
 			about: "ゲーム制作やコミッタとしての活動"
 		},
 		{
 			display: "Unity",
-			image: "/image/logo/unity.png",
+			image: "/image/logo/unity.webp",
 			since: 2022,
 			about: "授業内でのゲーム制作"
 		}

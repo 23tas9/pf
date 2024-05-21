@@ -10,13 +10,13 @@ const SLIDE_DATA = [
 		color: "bg-blue-300",
 		text: "Egg Tower",
 		href: 'https://tas9n.github.io/EggTower/game',
-		url: "/image/works/eggtower.png",
+		url: "/image/works/eggtower.webp",
 	},
 	{
 		color: "bg-yellow-300",
 		text: "Siv3D x Bullet",
 		href: 'https://github.com/tas9n/OpenSiv3DBulletPhysics/tree/main',
-		url: "/image/works/siv3dxbulletphysics.png",
+		url: "/image/works/siv3dxbulletphysics.webp",
 	},
 	{
 		color: "bg-purple-300",
