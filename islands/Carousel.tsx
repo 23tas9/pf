@@ -48,7 +48,7 @@ const Slide = (props: SlideProps) => {
 		>
 			<a href={href} target='_blank' class='carousel__child'>
 				<p class="carousel__child-text">{text}</p>
-				<img src={url} alt={text} class='carousel__child-img' />
+				<img src={url} alt="" class='carousel__child-img' />
 			</a>
 		</div>
 	);
