@@ -65,6 +65,15 @@ const WorkDatas: WorkDataType[] = [
 				src: "/image/works/oecupc-logo.webp"
 			}
 		]
+	},
+	{
+		title: "WEB上で遊べるゲームサイト",
+		content: (
+			<p>
+				私が制作したゲームをWEB上に公開たサイトを制作しました！<br />
+				<ExternalLink text="こちら" href="https://gamelib.9lab.me/" />から遊べます！
+			</p>
+		)
 	}
 ]
 
