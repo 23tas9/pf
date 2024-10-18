@@ -30,7 +30,7 @@ export default function About() {
 		{
 			display: "GitHub",
 			value: "tas9n",
-			link: "https://github.com/tas9n"
+			link: "https://github.com/23tas9"
 		}
 	];
 

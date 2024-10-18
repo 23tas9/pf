@@ -13,7 +13,7 @@ interface Data {
 
 export const handler: Handlers<Data> = {
 	async GET(_req, ctx) {
-		const response = await fetch(`https://qiita.com/tas9n/items/${ctx.params.name}.md`);
+		const response = await fetch(`https://qiita.com/23tas9/items/${ctx.params.name}.md`);
 
 		const md = await response.text();
 
@@ -32,11 +32,11 @@ export default function Home({ data }: PageProps) {
 			href: "/blog"
 		}
 	];
-	
+
 	return (
 		<div className="wrapper">
-			<Header menus={menus}/>
-			<BlogArticle contentText={ data.md } />
+			<Header menus={menus} />
+			<BlogArticle contentText={data.md} />
 			<Footer />
 		</div>
 	);

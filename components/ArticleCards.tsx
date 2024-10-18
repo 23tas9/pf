@@ -19,7 +19,7 @@ export default function ArticleCards({ title, feed }: Data) {
 				<article className="article-cards grid-container">
 					{feed.entries.map(entry => (
 						<section className="article-cards__item">
-							<a href={`/blog/${entry.links[0].href?.replace(`https://qiita.com/tas9n/items/`, '')}`}>
+							<a href={`/blog/${entry.links[0].href?.replace(`https://qiita.com/23tas9/items/`, '')}`}>
 								<figure className="article-cards__item__attachment">
 									{
 										<img className="article-cards__item__attachment__image" src={entry.attachments?.at(0)?.url} alt="" />
