@@ -15,7 +15,7 @@ interface Data {
 export const handler: Handlers<Data> = {
 	async GET(_req, ctx) {
 
-		const response = await fetch("https://qiita.com/tas9n/feed");
+		const response = await fetch("https://qiita.com/23tas9/feed");
 		const xml = await response.text();
 		const feed = await parseFeed(xml);
 
@@ -27,7 +27,7 @@ export default function Home({ data }: PageProps<Data>) {
 	const feed: Feed = data.feed;
 
 	console.log(feed);
-	
+
 	const menus: NavigationMenu[] = [
 		{
 			title: "Home",
@@ -41,7 +41,7 @@ export default function Home({ data }: PageProps<Data>) {
 
 	return (
 		<div className="wrapper">
-			<Header menus={menus}/>
+			<Header menus={menus} />
 			<ArticleCards title="ブログ" feed={feed} />
 			<Footer />
 		</div>

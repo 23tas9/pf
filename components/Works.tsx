@@ -38,12 +38,12 @@ const WorkDatas: WorkDataType[] = [
 			{
 				type: AttachmentType.externalLink,
 				title: "GitHubリポジトリ",
-				href: "https://github.com/tas9n/bnscup2023/tree/1.0"
+				href: "https://github.com/23tas9/bnscup2023/tree/1.0"
 			},
 			{
 				type: AttachmentType.image,
 				title: "バンダイナムコスタジオ杯 | Siv3D ゲームジャム 2023",
-				href: "https://github.com/tas9n/bnscup2023/tree/1.0",
+				href: "https://github.com/23tas9/bnscup2023/tree/1.0",
 				src: "/image/works/bnscup2023.webp"
 			}
 		]
