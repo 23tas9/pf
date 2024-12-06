@@ -1,0 +1,105 @@
+@use "var";
+
+.carousel {
+    position: relative;
+    width: var.$responsive-breakpoint_pc-min;
+    height: 400px;
+
+    padding: 0;
+    margin: 0 auto;
+
+    &__item{
+        position: absolute;
+
+        top: 0;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        height: 100%;
+        width: 100%;
+
+        margin: 0;
+
+        transition: opacity 0.25s, transform 0.5s;
+
+        transform: translateX(100vw);
+        opacity: 0;
+
+        &-current {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        &-next {
+            transform: translateX(-100vw);
+        }
+
+        &-prev {
+            transform: translateX(100vw);
+        }
+
+        &__image {
+            height: 320px;
+
+            object-fit: contain;
+        }
+
+        &__caption {
+            width: 100%;
+            height: 40px;
+
+            text-align: center;
+        }
+    }
+
+    &-index {
+        position: absolute;
+
+        bottom: 0;
+        left: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 40px;
+        padding: 0;
+        margin: 0;
+
+        list-style: none;
+
+        &__item{
+            padding: 0 8px;
+
+            color: #888;
+
+            &--current {
+                color: #444;
+            }
+        }
+    }
+
+    &-button {
+        position: absolute;
+        top: 0;
+
+        height: 100%;
+        width: 64px;
+
+        border: 0;
+
+        background-color: #fff;
+        opacity: 0.5;
+
+        &--left {
+            left: 0;
+        }
+
+        &--right{
+            right: 0;
+        }
+    }
+}
