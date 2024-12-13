@@ -43,6 +43,11 @@ export default function Index() {
 			title: "バンダイナムコスタジオ杯 | Siv3D ゲームジャム 2023",
 			href: 'https://github.com/23tas9/bnscup2023/tree/1.0',
 			src: "https://raw.githubusercontent.com/23tas9/bnscup2023/master/gameplay.png",
+		},
+		{
+			title: "自作音ゲー！ 「ChronoBeat」",
+			href: "https://github.com/23tas9/ChronoBeat",
+			src: "https://raw.githubusercontent.com/23tas9/ChronoBeat/refs/heads/master/ChronoBeat/App/resource/images/title.png"
 		}
 	];
 
