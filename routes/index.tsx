@@ -45,7 +45,7 @@ export default function Index() {
 			src: "https://raw.githubusercontent.com/23tas9/bnscup2023/master/gameplay.png",
 		},
 		{
-			title: "自作音ゲー！ 「ChronoBeat」",
+			title: "自作音ゲー！「ChronoBeat」",
 			href: "https://github.com/23tas9/ChronoBeat",
 			src: "https://raw.githubusercontent.com/23tas9/ChronoBeat/refs/heads/master/ChronoBeat/App/resource/images/title.png"
 		}
