@@ -149,7 +149,7 @@ h3 {
 }
 
 .external-link {
-  display: block;
+  display: inline-block;
   margin: 4px;
   color: #1DAE35;
 }
