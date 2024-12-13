@@ -31,7 +31,7 @@ export default function Index() {
 	const SLIDE_DATA = [
 		{
 			title: "Egg Tower",
-			href: 'https://23tas9.github.io/EggTower/game',
+			href: "https://gamelib.9lab.me/EggTower",
 			src: "/image/works/eggtower.webp",
 		},
 		{
