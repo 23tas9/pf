@@ -8,6 +8,10 @@
     padding: 0;
     margin: 0 auto;
 
+    overflow: hidden;
+
+    background-color: rgba(#fff, 0.6);
+
     &__item{
         position: absolute;
 
@@ -87,12 +91,10 @@
         top: 0;
 
         height: 100%;
-        width: 64px;
+        width: 48px;
 
         border: 0;
-
         background-color: #fff;
-        opacity: 0.5;
 
         &--left {
             left: 0;

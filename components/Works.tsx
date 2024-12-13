@@ -49,6 +49,26 @@ const WorkDatas: WorkDataType[] = [
 		]
 	},
 	{
+		title: "自作音ゲー！「ChronoBeat(beta)」をリリースしました",
+		content: (
+			<p>
+				自作の音ゲーである「ChronoBeat」をリリースしました。<br />
+				4レーンのタップ・ホールドのみのシンプルな操作で遊べます！<br />
+				開発の工夫などは
+				<ExternalLink text="こちら" href="https://qiita.com/23tas9/items/95b06a6f587cceb29d3f" />
+				から！
+			</p>
+		),
+		attachments: [
+			{
+				type: AttachmentType.image,
+				title: "ChronoBeat - タイトル",
+				href: "https://github.com/23tas9/ChronoBeat",
+				src: "https://raw.githubusercontent.com/23tas9/ChronoBeat/refs/heads/master/ChronoBeat/App/resource/images/title.png"
+			}
+		]
+	},
+	{
 		title: "所属サークル(OECUPC)のWebサイト制作(開発中)",
 		content: (
 			<p>
@@ -87,7 +107,11 @@ export default function Works() {
 					<section>
 						{data.content}
 						{data.attachments?.map(attachment => (
-							(attachment.type === AttachmentType.externalLink) ? <ExternalLink text={attachment.title} href={attachment.href} /> :
+							(attachment.type === AttachmentType.externalLink) ?
+								<>
+									<ExternalLink text={attachment.title} href={attachment.href} /><br />
+								</>
+								:
 								<a href={attachment.href} target="_blank">
 									<img src={attachment.src} alt={attachment.title} />
 								</a>

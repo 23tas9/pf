@@ -25,6 +25,10 @@ a {
   text-decoration: underline;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1 {
   margin: 40px 0;
   font-size: 48px;
@@ -149,7 +153,7 @@ h3 {
 }
 
 .external-link {
-  display: block;
+  display: inline-block;
   margin: 4px;
   color: #1DAE35;
 }

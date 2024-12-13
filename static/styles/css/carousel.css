@@ -4,6 +4,8 @@
   height: 400px;
   padding: 0;
   margin: 0 auto;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 .carousel__item {
   position: absolute;
@@ -62,10 +64,9 @@
   position: absolute;
   top: 0;
   height: 100%;
-  width: 64px;
+  width: 48px;
   border: 0;
   background-color: #fff;
-  opacity: 0.5;
 }
 .carousel-button--left {
   left: 0;

@@ -31,18 +31,23 @@ export default function Index() {
 	const SLIDE_DATA = [
 		{
 			title: "Egg Tower",
-			href: 'https://tas9n.github.io/EggTower/game',
+			href: "https://gamelib.9lab.me/EggTower",
 			src: "/image/works/eggtower.webp",
 		},
 		{
 			title: "Siv3D x Bullet",
-			href: 'https://github.com/tas9n/OpenSiv3DBulletPhysics/tree/main',
+			href: 'https://github.com/23tas9/OpenSiv3DBulletPhysics/tree/main',
 			src: "/image/works/siv3dxbulletphysics.webp",
 		},
 		{
 			title: "バンダイナムコスタジオ杯 | Siv3D ゲームジャム 2023",
-			href: 'https://github.com/tas9n/bnscup2023/tree/1.0',
-			src: "https://raw.githubusercontent.com/tas9n/bnscup2023/master/gameplay.png",
+			href: 'https://github.com/23tas9/bnscup2023/tree/1.0',
+			src: "https://raw.githubusercontent.com/23tas9/bnscup2023/master/gameplay.png",
+		},
+		{
+			title: "自作音ゲー！「ChronoBeat」",
+			href: "https://github.com/23tas9/ChronoBeat",
+			src: "https://raw.githubusercontent.com/23tas9/ChronoBeat/refs/heads/master/ChronoBeat/App/resource/images/title.png"
 		}
 	];
 
