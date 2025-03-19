@@ -26,8 +26,6 @@ export const handler: Handlers<Data> = {
 export default function Home({ data }: PageProps<Data>) {
 	const feed: Feed = data.feed;
 
-	console.log(feed);
-
 	const menus: NavigationMenu[] = [
 		{
 			title: "Home",
