@@ -49,7 +49,7 @@ const WorkDatas: WorkDataType[] = [
 		]
 	},
 	{
-		title: "自作音ゲー！「ChronoBeat(beta)」をリリースしました",
+		title: "自作音ゲー「ChronoBeat」",
 		content: (
 			<p>
 				自作の音ゲーである「ChronoBeat」をリリースしました。<br />
@@ -69,7 +69,7 @@ const WorkDatas: WorkDataType[] = [
 		]
 	},
 	{
-		title: "所属サークル(OECUPC)のWebサイト制作(開発中)",
+		title: "所属サークル(OECUPC)のWebサイト制作",
 		content: (
 			<p>
 				わたしの所属しているサークルのWebサイトをリニューアルしました。<br />
@@ -86,6 +86,7 @@ const WorkDatas: WorkDataType[] = [
 			}
 		]
 	},
+	/*
 	{
 		title: "WEB上で遊べるゲームサイト",
 		content: (
@@ -95,6 +96,7 @@ const WorkDatas: WorkDataType[] = [
 			</p>
 		)
 	}
+	*/
 ]
 
 export default function Works() {
