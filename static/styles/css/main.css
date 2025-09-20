@@ -25,6 +25,10 @@ a {
   text-decoration: underline;
 }
 
+p {
+  margin: 0;
+}
+
 img {
   max-width: 100%;
 }
@@ -107,7 +111,7 @@ h3 {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2em 1.5em;
 }
 
@@ -117,7 +121,7 @@ h3 {
   width: 960px;
 }
 .article-cards__item {
-  height: 420px;
+  height: 240px;
   background-color: white;
   border-radius: 8px;
   overflow: hidden;
