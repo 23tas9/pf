@@ -66,8 +66,15 @@ export default function Home({ data }: PageProps<Data>) {
 					<section className="article-cards__item">
 						<a href={`/blog/${item.id}`}>
 							<h3 className="article-cards__item__title">{item.title}</h3>
-							<p>{
-								item.updated_at?.toLocaleString("ja-jp", {
+							<p>投稿日: {
+								new Date(item.created_at).toLocaleString("ja-jp", {
+									year: "numeric",
+									month: "2-digit",
+									day: "2-digit"
+								}).replaceAll('/', '-')
+							}</p>
+							<p>最終更新日: {
+								new Date(item.updated_at).toLocaleString("ja-jp", {
 									year: "numeric",
 									month: "2-digit",
 									day: "2-digit"
